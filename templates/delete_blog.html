@@ -1,0 +1,9 @@
+{% extends 'layouts/base.html' %}
+{%  load static %}
+{% block content %}
+        <h1>Blokni o'chirish.</h1>
+        <form action=""method="post">{% csrf_token %}
+        <h6>'{{ blog.title }}' blogni ochirasizmi ? </h6>
+        <input type="submit" value="O'chirish">
+    </form>
+{% endblock %}
